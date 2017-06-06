@@ -5,4 +5,4 @@ if(Test-Path .\artifacts) {
 dotnet restore
 dotnet build
 
-dotnet pack .\Protacon.PowerBi.Token.Middleware\ -c Release -o .\artifacts --version-suffix=$env:APPVEYOR_BUILD_NUMBER
+dotnet pack .\Protacon.PowerBi.Token.Middleware\ -c Release -o .\artifacts /p:Version=0.0.1-beta$env:APPVEYOR_BUILD_NUMBER
